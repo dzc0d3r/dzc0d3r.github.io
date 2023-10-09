@@ -1,4 +1,4 @@
-// icons
+/* // icons
 import {
   FaHtml5,
   FaCss3,
@@ -6,14 +6,14 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
-} from "react-icons/fa";
+} from "react-icons/fa"
 
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
-} from "react-icons/si";
+} from "react-icons/si"
 
 
 //  data
@@ -86,10 +86,10 @@ const aboutData = [
       },
     ],
   },
-];
+] */
 
 const About = () => {
-  return <div>About</div>;
-};
+  return <div>About</div>
+}
 
-export default About;
+export default About

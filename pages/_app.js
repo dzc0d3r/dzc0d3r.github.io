@@ -15,9 +15,10 @@ function MyApp ({Component, pageProps}) {
           className='h-full'
         >
           <Transition />
+          <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
-      <Component {...pageProps} />
+
     </Layout>
   )
 }
