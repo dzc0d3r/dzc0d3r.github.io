@@ -1,7 +1,7 @@
 import {useState} from "react"
 
 import Circles from "../../components/Circles"
-
+import {v4 as uuidv4} from 'uuid'
 import {motion} from "framer-motion"
 import {fadeIn} from "../../variants"
 // icons
@@ -39,35 +39,35 @@ const aboutData = [
       {
         title: 'Programming Languages',
         icons: [
-          <SiJavascript />,
-          <SiPhp />,
-          <SiPython />,
-          <FaHtml5 />,
-          <FaCss3 />,
+          <SiJavascript key={uuidv4()} />,
+          <SiPhp key={uuidv4()} />,
+          <SiPython key={uuidv4()} />,
+          <FaHtml5 key={uuidv4()} />,
+          <FaCss3 key={uuidv4()} />,
         ],
       },
       {
         title: 'Frameworks & Tools',
         icons: [
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiRedux />,
-          <SiTailwindcss />,
-          <SiFramer />,
-          <SiLaravel />
+          <FaReact key={uuidv4()} />,
+          <SiNextdotjs key={uuidv4()} />,
+          <SiRedux key={uuidv4()} />,
+          <SiTailwindcss key={uuidv4()} />,
+          <SiFramer key={uuidv4()} />,
+          <SiLaravel key={uuidv4()} />
 
         ],
       },
       {
         title: 'Linux & DevOps',
         icons: [
-          <SiDebian />,
-          <SiArchlinux />,
-          <SiCentos />,
-          <SiGit />,
-          <SiGithub />,
-          <SiGithubactions />,
-          <SiDocker />,
+          <SiDebian key={uuidv4()} />,
+          <SiArchlinux key={uuidv4()} />,
+          <SiCentos key={uuidv4()} />,
+          <SiGit key={uuidv4()} />,
+          <SiGithub key={uuidv4()} />,
+          <SiGithubactions key={uuidv4()} />,
+          <SiDocker key={uuidv4()} />,
 
         ],
       },
@@ -191,7 +191,7 @@ const About = () => {
                       <div className="flex gap-x-4">
                         {/* icons */}
                         {item.icons?.map((icon, itemIndex) => {
-                          return <div className="cursor-pointer text-xl lg:text-3xl text-white hover:text-teal-200 hover:scale-125 transition-all duration-200 ease-in-out ">{icon}</div>
+                          return <div key={itemIndex} className="cursor-pointer text-xl lg:text-3xl text-white hover:text-teal-200 hover:scale-125 transition-all duration-200 ease-in-out ">{icon}</div>
                         })}
                       </div>
                     </div>
