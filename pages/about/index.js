@@ -158,13 +158,16 @@ const About = () => {
             {/* cool 3d card */}
 
             <motion.div
-              initial={{opacity: 0}}
-              animate={{opacity: 1}}
-              exit={{opacity: 0}}
-              transition={{delay: 0.1, duration: 0.8, ease: 'easeInOut'}}
 
 
-              class="w-56 h-56 md:w-[26rem] md:h-[26rem] parent mx-auto md:-mt-14 group md:flex hidden">
+              variants={fadeIn('up', 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              transition={{delay: 0.1, duration: 0.5, ease: 'easeInOut'}}
+
+
+              class="w-56 h-56 md:w-96 md:h-96 parent mx-auto md:-mt-14 group md:flex hidden">
               <div class="card group-hover:cursor-pointer transiti">
                 <div class="logo">
                   <span class="circle circle1"></span>
