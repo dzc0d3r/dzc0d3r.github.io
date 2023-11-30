@@ -6,17 +6,22 @@ const sora = Sora({subsets: ['latin'], variable: '--font-sora', weight: ['100', 
 const Layout = ({children}) => {
   return (
 
-    <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
+    <>
+      <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative sm:landscape:hidden md:landscape:block`}>
 
 
 
-      <TopLeftImg />
+        <TopLeftImg />
 
-      <Nav />
-      <Header />
-      {children}
+        <Nav />
+        <Header />
+        {children}
 
-    </div>
+      </div>
+     {/*  landscape view */}
+      <div className="hidden sm:landscape:flex">
+      </div>
+    </>
   )
 }
 

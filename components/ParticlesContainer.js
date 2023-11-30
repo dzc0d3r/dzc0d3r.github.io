@@ -20,7 +20,9 @@ const ParticlesContainer = () => {
           value: ''
         },
       },
-      fpsLimit: 120,
+      disableForReducedMotion: true,
+      smooth: true,
+      fpsLimit: 30,
       interactivity: {
         events: {
           onClick: {
@@ -75,7 +77,7 @@ const ParticlesContainer = () => {
             enable: true,
             area: 700
           },
-          value: 70,
+          value: 60,
 
         },
         opacity: {
@@ -85,7 +87,7 @@ const ParticlesContainer = () => {
           type: 'circle',
         },
         size: {
-          value: {min: 1, max: 5}
+          value: {min: 1, max: 4}
         },
 
       },
