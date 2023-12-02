@@ -8,6 +8,7 @@ const Avatar = () => {
       height={278}
       alt="profile"
       className="translate-z-0 w-full h-full"
+      loading="lazy"
 
     />
 

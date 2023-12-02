@@ -12,7 +12,7 @@ const Socials = () => {
   }, [])
   return (
     <>
-      {isClient && <div className="flex items-center gap-x-5 text-xl sm:text-3xl">
+      {isClient && <div className="flex items-center gap-x-5 text-xl sm:text-4xl">
         <Link
           href="https://linkedin.com/in/walid-lamraoui/"
           target="_blank"

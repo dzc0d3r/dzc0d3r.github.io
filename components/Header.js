@@ -16,9 +16,9 @@ const Header = () => {
             width={220}
             height={48}
           /> */}
-        <div className="mb-10 flex flex-col lg:flex-row justify-between items-center gap-y-4 py-8 ">
+        <div className="mb-0 sm:mb-2 flex flex-col lg:flex-row justify-between items-center gap-y-1 ">
           <Link href={'/'}>
-            <h1 className="text-2xl sm:text-5xl leading-[3rem] font-semibold font-sora">walid <span className="font-extralight">lamraoui</span><span className="text-accent">.</span></h1>
+            <h1 className="text-2xl sm:text-[2.4rem] leading-[3rem] font-semibold font-sora">walid <span className="font-extralight">lamraoui</span><span className="text-accent">.</span></h1>
           </Link>
 
           <Socials />

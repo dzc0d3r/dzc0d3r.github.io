@@ -21,7 +21,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
 
-          className="h1">
+          className="h1 mt-0">
           Transforming Ideas <br /> into {' '} <span className="text-accent">Digital Reality</span>
         </motion.h1>
         {/* subtitle */}
@@ -57,8 +57,15 @@ const Home = () => {
     </div>
     {/* image */}
     <div className="w-[1200px] h-full absolute right-0 bottom-0">
-      <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
-      </div>
+      <motion.div
+
+        variants={fadeIn('left', 0.1)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        transition={{duration: 0.1, ease: 'easeInOut'}}
+        className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
+      </motion.div>
       {/* particles */}
       <div>
         <ParticlesContainer />
