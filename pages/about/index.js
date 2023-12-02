@@ -201,8 +201,8 @@ const About = () => {
                   >
 
                   </Image>
-                  <span class="title  font-semibold text-2xl -mt-5 mb-1 ml-2">Hi there ..</span>
-                  <span class="text text-sm ml-2">Meet Lamraoui Walid, a passionate frontend developer who turns digital visions into captivating user experiences with precision coding and artistic flair. Elevate your web presence with his expertise, where innovation meets seamless design for an immersive online journey.</span>
+                  <span class="title  font-semibold text-xl -mt-6 mb-1 ml-2">Hi there ..</span>
+                  <span class="text text-sm ml-2 p-0">Meet Lamraoui Walid, a passionate frontend developer who turns digital visions into captivating user experiences with precision coding and artistic flair. Elevate your web presence with his expertise, where innovation meets seamless design for an immersive online journey.</span>
                 </div>
                 <div class="bottom">
 
