@@ -32,7 +32,7 @@
   }
 
   .h2 {
-    @apply text-[1.7rem] leading-tight md:text-[3.2rem] md:leading-[1.3] mb-4 font-semibold;
+    @apply text-[1.7rem] leading-tight md:text-[3rem] md:leading-[1.3] mb-4 font-semibold;
   }
 
   p {
@@ -127,29 +127,21 @@
 .bottom .view-more {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 1;
   justify-content: flex-end;
-  transition: all 0.2s ease-in-out;
-}
 
-.bottom .view-more:hover {
-  transform: translate3d(0, 0, 10px);
 }
 
 .bottom .view-more .view-more-button {
-  background: none;
-  border: none;
-  color: #00c37b;
-  font-weight: bolder;
-  font-size: 12px;
+  box-shadow: rgba(5, 71, 17, 0.5) 0px 7px 5px -5px;
 }
 
-.bottom .view-more .svg {
-  fill: none;
-  stroke: #00c37b;
-  stroke-width: 3px;
-  max-height: 15px;
-}
+
+
+
+
+
+
 
 .bottom .social-buttons-container {
   display: flex;
@@ -173,34 +165,43 @@
   transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
 }
 
+.bottom .social-buttons-container .social-button:first-child:hover {
+  background: #1DA1F2
+}
+
 .bottom .social-buttons-container .social-button:nth-child(2) {
   transition: transform 0.2s ease-in-out 0.6s, box-shadow 0.2s ease-in-out 0.6s;
+}
+
+.bottom .social-buttons-container .social-button:nth-child(2):hover {
+  background: #4267B2
 }
 
 .bottom .social-buttons-container .social-button:nth-child(3) {
   transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
 }
 
-.bottom .social-buttons-container .social-button .svg {
-  width: 15px;
-  fill: #00894d;
+
+.bottom .social-buttons-container .social-button:nth-child(3):hover {
+  background: #F47F24
 }
 
-.bottom .social-buttons-container .social-button:hover {
-  background: black;
+.bottom .social-buttons-container .social-button:nth-child(4) {
+  transition: transform 0.2s ease-in-out 1s, box-shadow 0.2s ease-in-out 1s;
 }
 
-.bottom .social-buttons-container .social-button:hover .svg {
-  fill: white;
+.bottom .social-buttons-container .social-button:nth-child(4):hover {
+  background: black
 }
 
-.bottom .social-buttons-container .social-button:active {
-  background: rgb(255, 234, 0);
+.card .view-more {
+  transition: transform 0.4s ease-in-out 1.2s, box-shadow 0.2s ease-in-out 1.2s;
+
 }
 
-.bottom .social-buttons-container .social-button:active .svg {
-  fill: black;
-}
+
+
+
 
 .logo {
   position: absolute;
@@ -277,6 +278,11 @@
 }
 
 .parent:hover .card .bottom .social-buttons-container .social-button {
+  transform: translate3d(0, 0, 40px);
+  box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
+}
+
+.parent:hover .card .view-more {
   transform: translate3d(0, 0, 50px);
   box-shadow: rgba(5, 71, 17, 0.2) -5px 20px 10px 0px;
 }

@@ -15,10 +15,11 @@ const Layout = ({children}) => {
 
         <Nav />
         <Header />
+
         {children}
 
       </div>
-     {/*  landscape view */}
+      {/*  landscape view */}
       <div className="hidden sm:landscape:flex">
       </div>
     </>
