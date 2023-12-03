@@ -62,7 +62,7 @@
 
 
 .parent {
-  perspective: 100rem;
+  perspective: 160rem;
 }
 
 .card {
@@ -85,7 +85,7 @@
   inset: 8px;
   border-radius: 55px;
   border-top-right-radius: 100%;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
   /* -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px); */
   transform: translate3d(0px, 0px, 25px);
@@ -103,7 +103,6 @@
 .content .title {
   display: block;
   color: rgba(19, 20, 36, 1);
-
 }
 
 .content .text {
@@ -220,7 +219,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  background: rgba(255, 7, 7, 0.2);
+  background: rgba(255, 7, 7, 0.3);
   transition: all 0.5s ease-in-out;
 }
 

@@ -12,7 +12,7 @@ import {
   FaReact,
 } from "react-icons/fa"
 import {FaLinkedin} from 'react-icons/fa'
-import {RiFacebookLine, RiTwitterLine, RiStackOverflowLine, RiGithubLine} from 'react-icons/ri'
+import {RiDownloadFill, RiFacebookLine, RiTwitterLine, RiStackOverflowLine, RiGithubLine} from 'react-icons/ri'
 import Link from "next/link"
 
 import {
@@ -130,6 +130,7 @@ const aboutData = [
 ]
 
 const About = () => {
+
   const [index, setIndex] = useState(0)
 
   return <div className="bg-primary/60 h-full">
@@ -139,7 +140,7 @@ const About = () => {
           {/* circles */}
           <Circles />
           <div
-            className=" xl:h-full flex flex-col items-center xl:flex-row gap-x-6 gap-y-2 mt-2 justify-center h-screen xl:mt-24 "
+            className=" xl:h-full flex flex-col items-center xl:flex-row gap-x-6 gap-y-2 mt-2 justify-center xl:justify-between h-screen xl:mt-24 "
           >
 
             <motion.div
@@ -173,14 +174,14 @@ const About = () => {
               transition={{delay: 0.1, duration: 0.5, ease: 'easeInOut'}}
 
 
-              class="w-56 h-56 xl:w-96 xl:h-96 parent mx-auto xl:-mt-14 group hidden lg:flex">
-              <div class="card group-hover:cursor-pointer transiti">
+              class="w-56 h-56 xl:w-[25.5rem] xl:h-[25.5rem] parent xl:-mt-16 group hidden lg:flex ">
+              <div class="card group-hover:cursor-pointer transition-all duration-300">
                 <div class="logo">
-                  <span class="circle circle1"></span>
+                  {/*  <span class="circle circle1"></span> */}
                   <span class="circle circle2"></span>
                   <span class="circle circle3"></span>
                   <span class="circle circle4"></span>
-                  <span class="circle circle5">
+                  <span class="circle circle5 group-hover:animate-pulse">
                     <Link
                       target="_blank"
                       href="https://linkedin.com/in/walid-lamraoui">
@@ -196,13 +197,13 @@ const About = () => {
                     width={100}
                     height={100}
                     alt={"walid lamraoui picture"}
-                    className="h-24 w-24 rounded-full bg-black absolute top-6"
+                    className="h-24 w-24 rounded-full absolute top-6"
 
                   >
 
                   </Image>
                   <span class="title  font-semibold text-xl -mt-6 mb-1 ml-2">Hi there ..</span>
-                  <span class="text text-sm ml-2 p-0">Meet Lamraoui Walid, a passionate frontend developer who turns digital visions into captivating user experiences with precision coding and artistic flair. Elevate your web presence with his expertise, where innovation meets seamless design for an immersive online journey.</span>
+                  <span class="text text-[0.88rem] ml-2 p-0 -mt-1">Meet Lamraoui Walid, a passionate frontend developer who turns digital visions into captivating user experiences with precision coding and artistic flair. Elevate your web presence with his expertise, where innovation meets seamless design for an immersive online journey.</span>
                 </div>
                 <div class="bottom">
 
@@ -251,12 +252,18 @@ const About = () => {
                     </button>
 
                   </div>
-                  <div class="view-more rounded-full">
-                    <button className="view-more-button font-semibold  bg-accent w-28 h-10 rounded-full shadow-black/80">
+                  <Link
+                    href="/resume.pdf"
+                    download="walid-lamraoui-resume"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-more rounded-full ">
+                    <button className="view-more-button font-semibold  bg-accent w-32 h-10 rounded-full shadow-black/80 flex flex-row items-center justify-center gap-2">
                       RESUME
+                      <RiDownloadFill className="-mt-1" />
                     </button>
 
-                  </div>
+                  </Link>
                 </div>
               </div>
             </motion.div>
