@@ -1,5 +1,20 @@
-const Bulb = () => {
-  return <div>Bulb</div>;
-};
+import Image from "next/image"
 
-export default Bulb;
+const Bulb = () => {
+  return (
+    <div className="absolute lg:-left-44 -left-32 lg:-bottom-16 -bottom-5 rotate-12 mix-blend-color-dodge animate-pulse w-[11rem] xl:w-[16rem] z-10 duration-75 ">
+      <Image
+        src="/bulb.png"
+        width={260}
+        height={200}
+        className="w-full h-full"
+        alt="bulb image"
+      >
+
+      </Image>
+
+    </div>
+  )
+}
+
+export default Bulb
