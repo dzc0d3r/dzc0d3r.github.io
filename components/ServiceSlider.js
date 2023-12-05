@@ -29,18 +29,18 @@ const serviceData = [
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Ensuring that websites are visually appealing and functional across different devices and screen sizes.',
+    description: 'Ensuring websites exhibit visual appeal and functionality seamlessly across diverse devices and screen sizes for an enhanced user experience.',
   },
 
   {
     icon: <RxReader />,
     title: 'Copywriting',
-    description: 'Creating, integrating and styling content directly within the code',
+    description: 'Blending seamless content creation, integration, and styling within the code to craft cohesive and visually engaging web experiences.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Implementing frontend best practices that contribute to better search engine optimization.',
+    description: 'Implementing foundational SEO practices within the code to optimize websites for improved search visibility and user engagement.',
   },
 ]
 
@@ -67,7 +67,7 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[rgba(32,59,117,0.15)] h-max rounded-lg px-6 py-8 flex  flex-col gap-x-6 sm:gap-x-0 cursor-pointer group hover:bg-[rgba(41,70,168,0.15)] relative transition-all duration-300 xl:min-h-[20rem] gap-y-1 '>
+            <div className='bg-[rgba(32,59,117,0.15)] h-max rounded-lg px-6 py-8 flex  flex-col gap-x-6 sm:gap-x-0 cursor-pointer group hover:bg-[rgba(47,76,172,0.15)] relative transition-all duration-300 xl:min-h-[20rem] gap-y-1 '>
               {/* icons */}
               <div className='text-4xl text-accent mb-5'>
                 {item.icon}
@@ -81,7 +81,7 @@ const ServiceSlider = () => {
               {/* arrows */}
 
 
-              <div className='text-3xl absolute xl:bottom-5 bottom-4'>
+              <div className='text-2xl absolute xl:bottom-5 bottom-4'>
                 <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent duration-300 transition-all ease-in-out ' />
               </div>
 

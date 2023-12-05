@@ -23,7 +23,7 @@ const Services = () => {
               exit="hidden"
 
               className='h2 xl:mt-5'>
-              My Services<span className='text-accent'>.</span>
+                Services<span className='text-accent'>.</span>
 
 
 
