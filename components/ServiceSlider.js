@@ -62,12 +62,12 @@ const ServiceSlider = () => {
         clickable: true
       }}
       modules={[FreeMode, Pagination]}
-      className='h-[20rem] xl:h-[23rem]  mx-auto'
+      className='h-[20rem] xl:h-[23rem]  mx-auto z-50'
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[rgba(32,59,117,0.15)] h-max rounded-lg px-6 py-8 flex  flex-col gap-x-6 sm:gap-x-0 cursor-pointer group hover:bg-[rgba(47,76,172,0.15)] relative transition-all duration-300 xl:min-h-[20rem] gap-y-1 '>
+            <div className='bg-[rgba(32,59,117,0.15)] h-max rounded-lg px-6 py-5 lg:py-8 flex  flex-col gap-x-6 sm:gap-x-0 cursor-pointer group hover:bg-[rgba(47,76,172,0.15)] relative transition-all duration-300 xl:min-h-[20rem] min-h-[17rem] gap-y-1 '>
               {/* icons */}
               <div className='text-4xl text-accent mb-5'>
                 {item.icon}

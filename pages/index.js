@@ -10,9 +10,13 @@ import {motion} from "framer-motion"
 
 import {fadeIn} from '../variants'
 const Home = () => {
-  return <div className="bg-primary/60 h-full">
+  return <div className="bg-primary/60 h-full bg-opacity-5">
     {/* text */}
     <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/20  to-black/5">
+      {/* particles */}
+      <div className="container mx-auto z-50">
+        <ParticlesContainer />
+      </div>
       {/* title */}
       <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
         <motion.h1
@@ -66,10 +70,7 @@ const Home = () => {
         transition={{duration: 0.1, ease: 'easeInOut'}}
         className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
       </motion.div>
-      {/* particles */}
-      <div>
-        <ParticlesContainer />
-      </div>
+
       {/* avatar image */}
       <motion.div
         variants={fadeIn('up', 0.5)}
