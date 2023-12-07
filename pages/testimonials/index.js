@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <div className='bg-primary/60 h-full py-32 flex items-center flex-col justify-center text-center'>
       <Circles />
-      <div className='container mx-auto h-full flex flex-col justify-center '>
+      <div className='container mx-auto h-full flex flex-col justify-center xl:mt-10'>
         <motion.div
           variants={fadeIn('down', 0.2)}
           initial="hidden"
@@ -25,7 +25,7 @@ const Testimonials = () => {
 
         </motion.div>
         <motion.div
-          variants={fadeIn('up', 0.6)}
+          variants={fadeIn('up', 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
