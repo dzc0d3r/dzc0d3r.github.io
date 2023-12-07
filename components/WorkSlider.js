@@ -36,68 +36,68 @@ import Link from 'next/link'
 
 // data
 const workSlides = {
-  slides:
-    [
-      {
-        title: "innerspace",
-        repository: "https://something",
-        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        technologies: [
-          {title: "next", icon: <SiNextdotjs className='' />},
-          {title: "tailwind", icon: <SiTailwindcss className='text-green-900' />}
-        ],
-        live_link: "https://google.com",
-        main_image: {
+  slides: [
+    {
+      title: "innerspace",
+      repository: "https://something",
+      description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      technologies: [
+        {title: "next", icon: <SiNextdotjs className='' />},
+        {title: "tailwind", icon: <SiTailwindcss className='text-green-900' />}
+      ],
+      live_link: "https://google.com",
+      main_image: {
+        path: "/thumb1.jpg"
+      },
+      thumbs: [
+        {
           path: "/thumb1.jpg"
         },
-        thumbs: [
-          {
-            path: "/thumb1.jpg"
-          },
-          {
-            path: "/thumb3.jpg"
-          },
-          {
-            path: "/thumb4.jpg"
-          },
-          {
-            path: "/thumb3.jpg"
-          },
-        ]
+        {
+          path: "/thumb3.jpg"
+        },
+        {
+          path: "/thumb4.jpg"
+        },
+        {
+          path: "/thumb3.jpg"
+        },
+      ]
+    },
+
+    {
+      title: "innerspace",
+      repository: "https://something",
+      description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      technologies: [
+        {title: "next", icon: <SiNextdotjs className='' />},
+        {title: "tailwind", icon: <SiTailwindcss className='text-green-900' />}
+      ],
+      live_link: "https://google.com",
+      main_image: {
+        path: "/thumb1.jpg"
       },
-      {
-        title: "innerspace",
-        repository: "https://something",
-        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        technologies: [
-          {title: "next", icon: <SiNextdotjs className='' />},
-          {title: "tailwind", icon: <SiTailwindcss className='text-green-900' />}
-        ],
-        live_link: "https://google.com",
-        main_image: {
+      thumbs: [
+        {
           path: "/thumb1.jpg"
         },
-        thumbs: [
-          {
-            path: "/thumb1.jpg"
-          },
-          {
-            path: "/thumb3.jpg"
-          },
-          {
-            path: "/thumb4.jpg"
-          },
-          {
-            path: "/thumb3.jpg"
-          },
-        ]
-      },
+        {
+          path: "/thumb3.jpg"
+        },
+        {
+          path: "/thumb4.jpg"
+        },
+        {
+          path: "/thumb3.jpg"
+        },
+      ]
+    },
 
 
 
 
 
-    ],
+  ],
 }
 
 const WorkSlider = () => {
@@ -108,12 +108,12 @@ const WorkSlider = () => {
         clickable: true
       }}
       modules={[Pagination]}
-      className=' h-[20rem] xl:h-[24rem]  xl:w-[110%]'
+      className=' h-[20rem] xl:h-[25rem] xl:min-w-[110%]'
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index} className='relative w-full h-full max-w-none group transition-all duration-500'>
-            <div className='relative grid grid-cols-3 gap-2 w-full h-[85%] xl:h-[90%]  goup max-w-none hover:cursor-pointer rounded-lg bg-[rgba(32,59,117,0.15)]'>
+            <div className='relative grid grid-cols-3 gap-2 w-full h-[85%] xl:h-[88%]  goup max-w-none hover:cursor-pointer rounded-lg bg-[rgba(32,59,117,0.15)]'>
               <Image
                 src={slide.main_image.path}
                 width={50}
@@ -168,7 +168,7 @@ const WorkSlider = () => {
                   })}
 
                 </div>
-                <div className='flex justify-center items-center gap-5 -mt-2'>
+                <div className='flex justify-center items-center gap-3 -mt-2'>
                   <Link
                     href={slide.live_link}
                     className='flex flex-row px-3 py-1 items-center bg-primary text-white rounded-full text-lg gap-2 hover:bg-white hover:text-primary  transition-all duration-700 ease-in-out'
