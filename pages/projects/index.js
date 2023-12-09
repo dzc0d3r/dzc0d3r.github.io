@@ -35,7 +35,7 @@ const Projects = () => {
               exit="hidden"
               className='xl:mb-4 mb-3 max-w-[27rem] mx-auto lg:mx-0 text-sm xl:text-lg '>
 
-              I've successfully executed and collaborated on diverse projects, showcasing proficiency in frontend development. <br /> From dynamic e-commerce interfaces to sleek portfolio websites, each project reflects a commitment to seamless design, functionality, and user experience.
+              I&apos;ve successfully executed and collaborated on diverse projects, showcasing proficiency in frontend development. <br /> From dynamic e-commerce interfaces to sleek portfolio websites, each project reflects a commitment to seamless design, functionality, and user experience.
 
             </motion.p>
           </div>
