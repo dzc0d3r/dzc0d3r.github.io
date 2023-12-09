@@ -108,25 +108,25 @@ const WorkSlider = () => {
         clickable: true
       }}
       modules={[Pagination]}
-      className=' h-[20rem] xl:h-[25rem] xl:min-w-[110%]'
+      className=' h-[19rem] xl:h-[25rem] xl:min-w-[110%]'
     >
       {workSlides.slides.map((slide, index) => {
         return (
-          <SwiperSlide key={index} className='relative w-full h-full max-w-none group transition-all duration-500'>
-            <div className='relative grid grid-cols-3 gap-2 w-full h-[85%] xl:h-[88%]  goup max-w-none hover:cursor-pointer rounded-lg bg-[rgba(32,59,117,0.15)]'>
+          <SwiperSlide key={index} className='relative w-full h-full max-w-none group transition-all duration-500 '>
+            <div className='relative grid grid-cols-3 gap-2 w-full h-[83%] xl:h-[88%]  goup max-w-none hover:cursor-pointer rounded-lg bg-[rgba(32,59,117,0.15)]'>
               <Image
                 src={slide.main_image.path}
                 width={50}
                 height={50}
                 alt="innerspace"
-                className='col-span-1 w-full h-full rounded-tl-lg rounded-bl-lg'
+                className='col-span-1 w-full h-full rounded-tl-lg rounded-bl-lg hidden xl:flex'
 
               >
 
               </Image>
               <div className='relative col-span-2 pt-5 w-full h-full ml-2 '>
                 <h3 className='text-accent text-xl xl:text-3xl capitalize -mt-2 mb-5'>{slide.title}</h3>
-                <p className='text-lg mb-5'>{slide.description}</p>
+                <p className='text-sm xl:text-lg mb-5'>{slide.description}</p>
                 <ul className='flex flex-row justify-center flex-wrap gap-2 absolute bottom-2'>
                   {slide.technologies.map((tech, index) => {
                     return (
@@ -140,7 +140,7 @@ const WorkSlider = () => {
                         >
                           {tech.icon}
                         </span>
-                        <span className='text-sm'>
+                        <span className='xl:text-sm text-xs '>
                           {tech.title}
                         </span>
                       </li>

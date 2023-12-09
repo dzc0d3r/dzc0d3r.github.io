@@ -150,13 +150,13 @@ const About = () => {
               exit="hidden"
               transition={{delay: 0.1, duration: 0.5, ease: 'easeInOut'}}
               className="xl:hidden  flex-1 flex flex-col justify-center items-start mt-1 xl:mt-[-2rem] ">
-              <h2 className="h2 mx-auto xl:mx-0 mt-2">
+              <h2 className="h2 mx-auto xl:mx-0 mt-1">
                 Captivating <span className="capitalize text-accent">
                   stories
                 </span> <br />
                 birth magnificent products
               </h2>
-              <p className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-6 px-2 text-base">
+              <p className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-6 px-2 text-sm md:text-base">
                 Compelling narratives fuel stunning frontend designs, merging coding prowess with visual appeal for immersive digital experiences. The synergy of storytelling and cutting-edge technologies elevates web development to captivating user interfaces.
               </p>
 

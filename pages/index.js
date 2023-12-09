@@ -10,11 +10,11 @@ import {motion} from "framer-motion"
 
 import {fadeIn} from '../variants'
 const Home = () => {
-  return <div className="bg-primary/60 h-full bg-opacity-5">
+  return <div className="bg-primary/60 h-full">
     {/* text */}
-    <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/20  to-black/5">
+    <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/20  to-black/5 bg-opacity-5">
       {/* particles */}
-      <div className="container mx-auto z-50">
+      <div className="container mx-auto  ">
         <ParticlesContainer />
       </div>
       {/* title */}
@@ -39,9 +39,14 @@ const Home = () => {
 
         </motion.p>
         {/* projects btn */}
-        <div className="flex justify-center xl:hidden relative">
+        <motion.div
+          variants={fadeIn('up', 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex justify-center xl:hidden ">
           <ProjectsBtn />
-        </div>
+        </motion.div>
 
         <motion.div
           variants={fadeIn('down', 0.4)}
