@@ -133,8 +133,8 @@ const About = () => {
 
   const [index, setIndex] = useState(0)
 
-  return <div className="bg-primary/60 h-full">
-    <div className=" w-full h-full bg-gradient-to-r from-primary/10 via-black/5  to-black/5">
+  return <div className="bg-primary/60 h-full xl:grid xl:content-center ">
+    <div className=" xl:mt-14 w-full h-full bg-gradient-to-r from-primary/10 via-black/5  to-black/5">
       <div className="py-20 text-center xl:text-left">
         <div className="container mx-auto outline-white">
           {/* circles */}
@@ -149,14 +149,14 @@ const About = () => {
               animate="show"
               exit="hidden"
               transition={{delay: 0.1, duration: 0.5, ease: 'easeInOut'}}
-              className="lg:hidden  flex-1 flex flex-col justify-center items-start mt-1 xl:mt-[-2rem] ">
-              <h2 className="h2 mx-auto xl:mx-0 mt-2">
+              className="xl:hidden  flex-1 flex flex-col justify-center items-start mt-1 xl:mt-[-2rem] ">
+              <h2 className="h2 mx-auto xl:mx-0 mt-1">
                 Captivating <span className="capitalize text-accent">
                   stories
                 </span> <br />
                 birth magnificent products
               </h2>
-              <p className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-6 px-2 text-base">
+              <p className="max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-6 px-2 text-sm md:text-base">
                 Compelling narratives fuel stunning frontend designs, merging coding prowess with visual appeal for immersive digital experiences. The synergy of storytelling and cutting-edge technologies elevates web development to captivating user interfaces.
               </p>
 
@@ -174,7 +174,7 @@ const About = () => {
               transition={{delay: 0.1, duration: 0.5, ease: 'easeInOut'}}
 
 
-              class="w-56 h-56 xl:w-[25.5rem] xl:h-[25.5rem] parent xl:-mt-16 group hidden lg:flex ">
+              class="w-56 h-56 xl:w-[25.5rem] xl:h-[25.5rem] parent xl:-mt-16 group hidden xl:flex  ">
               <div class="card group-hover:cursor-pointer transition-all duration-300">
                 <div class="logo">
                   {/*  <span class="circle circle1"></span> */}
@@ -268,7 +268,7 @@ const About = () => {
               </div>
             </motion.div>
 
-            <div className="flex flex-col w-full xl:max-w-[50%] h-[480px]">
+            <div className="flex flex-col w-full xl:max-w-[60%] h-[480px]">
               <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-5">
                 {aboutData.map((item, itemIndex) => {
                   return (
