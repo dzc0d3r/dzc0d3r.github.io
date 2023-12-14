@@ -28,7 +28,16 @@ import {
   SiDebian,
   SiArchlinux,
   SiCentos,
-  SiGitlab
+  SiGitlab,
+  SiFirebase,
+  SiSanity,
+  SiReact,
+  SiI18Next,
+  SiStripe,
+  SiReacthookform,
+  SiDaisyui,
+  SiEslint,
+  SiCommitlint
 } from "react-icons/si"
 import {BsArrowRight, BsEye} from 'react-icons/bs'
 import Image from 'next/image'
@@ -39,59 +48,72 @@ const workSlides = {
   slides: [
     {
       title: "innerspace",
-      repository: "https://something",
-      description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      repository: "https://github.com/202306-NEA-DZ-FEW/online-therapist",
+      description: "Bridge the gap to mental well-being – A therapy website connects patients with experienced therapists for personalized and confidential support.",
       technologies: [
-        {title: "next", icon: <SiNextdotjs className='' />},
-        {title: "tailwind", icon: <SiTailwindcss className='text-green-900' />}
+        {title: "react", icon: <SiReact />},
+        {title: "next", icon: <SiNextdotjs />},
+        {title: "tailwind", icon: <SiTailwindcss />},
+        {title: "firebase", icon: <SiFirebase />},
+        {title: "sanity", icon: <SiSanity />},
+        {title: "framer-motion", icon: <SiFramer />},
+        {title: "stripe", icon: <SiStripe />},
+        {title: "i18next", icon: <SiI18Next />},
+        {title: "react-hook-form", icon: <SiReacthookform />},
       ],
-      live_link: "https://google.com",
+      live_link: "https://innerspace.codewithwalid.pro",
       main_image: {
-        path: "/thumb1.jpg"
+        path: "/projects/innerspace/main.png"
       },
       thumbs: [
         {
-          path: "/thumb1.jpg"
+          path: "/projects/innerspace/thumb1.png"
         },
         {
-          path: "/thumb3.jpg"
+          path: "/projects/innerspace/thumb2.png"
         },
         {
-          path: "/thumb4.jpg"
+          path: "/projects/innerspace/thumb3.png"
         },
         {
-          path: "/thumb3.jpg"
+          path: "/projects/innerspace/thumb4.png"
+        },
+      ]
+    },
+    {
+      title: "moviplaza",
+      repository: "https://github.com/202306-NEA-DZ-FEW/movie-project-team_404",
+      description: "Unlock a world of movies and TV shows online with our TMDB API-powered website for seamless discovery and enjoyment. ",
+      technologies: [
+        {title: "react", icon: <SiReact />},
+        {title: "next", icon: <SiNextdotjs />},
+        {title: "tailwind", icon: <SiTailwindcss />},
+        {title: "daisyUI", icon: <SiDaisyui />},
+        {title: "eslint", icon: <SiEslint />},
+        {title: "commit-lint", icon: <SiCommitlint />},
+      ],
+      live_link: "https://moviplaza.codewithwalid.pro",
+      main_image: {
+        path: "/projects/moviplaza/main.png"
+      },
+      thumbs: [
+        {
+          path: "/projects/moviplaza/thumb1.png"
+        },
+        {
+          path: "/projects/moviplaza/thumb2.png"
+        },
+        {
+          path: "/projects/moviplaza/thumb3.png"
+        },
+        {
+          path: "/projects/moviplaza/thumb4.png"
         },
       ]
     },
 
-    {
-      title: "innerspace",
-      repository: "https://something",
-      description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-      technologies: [
-        {title: "next", icon: <SiNextdotjs className='' />},
-        {title: "tailwind", icon: <SiTailwindcss className='text-green-900' />}
-      ],
-      live_link: "https://google.com",
-      main_image: {
-        path: "/thumb1.jpg"
-      },
-      thumbs: [
-        {
-          path: "/thumb1.jpg"
-        },
-        {
-          path: "/thumb3.jpg"
-        },
-        {
-          path: "/thumb4.jpg"
-        },
-        {
-          path: "/thumb3.jpg"
-        },
-      ]
-    },
+
+
 
 
 
@@ -108,7 +130,7 @@ const WorkSlider = () => {
         clickable: true
       }}
       modules={[Pagination]}
-      className=' h-[19rem] xl:h-[25rem] xl:min-w-[110%]'
+      className=' h-[19rem] xl:h-[25rem] xl:moviplaza%]'
     >
       {workSlides.slides.map((slide, index) => {
         return (
@@ -119,23 +141,23 @@ const WorkSlider = () => {
                 width={50}
                 height={50}
                 alt="innerspace"
-                className='col-span-1 w-full h-full rounded-tl-lg rounded-bl-lg hidden xl:flex'
+                className='col-span-1 w-full h-full rounded-tl-lg rounded-bl-lg hidden xl:flex object-fill'
 
               >
 
               </Image>
-              <div className='relative col-span-2 pt-5 w-full h-full ml-2 '>
-                <h3 className='text-accent text-xl xl:text-3xl capitalize -mt-2 mb-5'>{slide.title}</h3>
-                <p className='text-sm xl:text-lg mb-5'>{slide.description}</p>
-                <ul className='flex flex-row justify-center flex-wrap gap-2 absolute bottom-2'>
+              <div className='relative col-span-3 xl:col-span-2 pt-5 w-full h-full  xl:ml-2 text-center xl:text-left'>
+                <h3 className='text-accent text-xl xl:text-3xl capitalize -mt-2 mb-5 '>{slide.title}</h3>
+                <p className='text-sm xl:text-lg mb-5 px-5 xl:px-0'>{slide.description}</p>
+                <ul className='flex flex-row justify-center flex-wrap gap-2 absolute bottom-3 w-full xl:-ml-4'>
                   {slide.technologies.map((tech, index) => {
                     return (
                       <li
                         key={index}
-                        className='gap-1 flex flex-col items-center'
+                        className='gap-1 space-x-1 mx-0  flex flex-col items-center justify-center '
                       >
                         <span
-                          className='text-xl lg:text-3xl'
+                          className='text-xl lg:text-2xl'
 
                         >
                           {tech.icon}
@@ -160,7 +182,7 @@ const WorkSlider = () => {
                         width={20}
                         height={20}
                         alt="test"
-                        className='h-full w-full rounded-lg hover:scale-105 transition-all duration-300 ease-in-out'
+                        className='h-full w-full rounded-lg hover:scale-105 transition-all duration-300 ease-in-out object-cover hover:object-fill'
                       >
 
                       </Image>
@@ -171,15 +193,17 @@ const WorkSlider = () => {
                 <div className='flex justify-center items-center gap-3 -mt-2'>
                   <Link
                     href={slide.live_link}
-                    className='flex flex-row px-3 py-1 items-center bg-primary text-white rounded-full text-lg gap-2 hover:bg-white hover:text-primary  transition-all duration-700 ease-in-out'
+                    className='flex flex-row px-3 py-1 items-center bg-primary text-white rounded-full text-base gap-2 hover:bg-white hover:text-primary  transition-all duration-700 ease-in-out'
+                    target='_blank'
                   >
-                    Demo <BsEye className='text-xl xl:text-2xl font-bold' />
+                    Demo <BsEye className='text-lg xl:text-2xl font-bold' />
                   </Link>
                   <Link
                     href={slide.repository}
-                    className='flex flex-row px-3 py-1 items-center bg-primary text-white rounded-full text-lg gap-2 hover:bg-white hover:text-primary  transition-all duration-700 ease-in-out '
+                    className='flex flex-row px-3 py-1 items-center bg-primary text-white rounded-full text-base gap-2 hover:bg-white hover:text-primary  transition-all duration-700 ease-in-out '
+                    target='_blank'
                   >
-                    Code <SiGithub className=' text-xl xl:text-2xl font-bold' />
+                    Code <SiGithub className=' text-lg xl:text-2xl font-bold' />
                   </Link>
 
                 </div>
